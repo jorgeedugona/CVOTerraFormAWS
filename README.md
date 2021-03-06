@@ -26,10 +26,11 @@ Please find below the prerequisites to run the script:
 
 Using Cloud Manager provider we can have Cloud Manager Connector deploy in matter of minutes. The following elements are going to be deployed in with this script:
 
-• IAM Policy and Custom IAM role that will be assigned to the Cloud Manager VM.
-• Create a Security Group to allow ports SSH (22), HTTPS (443) and HTTP (80).
-• SSH Key Pair to access Cloud Manager.
-• Cloud Manager VMs
+• IAM Policy and Custom IAM role that will be assigned to the Cloud Manager VM. 
+• Create a Security Group to allow ports SSH (22), HTTPS (443) and HTTP (80). 
+• SSH Key Pair to access Cloud Manager. 
+• Cloud Manager VMs. 
+
 
 
 
