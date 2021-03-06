@@ -16,14 +16,20 @@
 </p>
 
 
-Please find below the prerequisites to run the script:  
-• AWS Access key ID and Secret access key.  
-• Linux VM (Centos, Ubuntu)
-• VPC ID (e.g. vpc-0a6aa414cf8a12345)
-• Subnet ID (e.g. subnet-03d246b3fa1234567)
-• 
-PAYG Azure Subscription.  
-•  
+Please find below the prerequisites to run the script: 
 
-The script can deploy vdbench with NFS for Cloud Volumes Ontap in Azure. After deployment the end user only needs to issue “vdbench -f < workload definitions >” to start the performance test (e.g vdbench -f 00-aff-basic-test-nfs).  
-The script includes the following features:
+• AWS Access key ID and Secret access key.  
+• Linux VM (Centos, Ubuntu) with Terraform and AWS cli installed. 
+• VPC ID (e.g. vpc-0a6aa414cf8a12345), Subnet ID (e.g. subnet-03d246b3fa1234567), AWS region (e.g. us-east-1)
+• Account with Cloud Central - https://cloud.netapp.com/
+• Authentication Token with Cloud Central - https://services.cloud.netapp.com/refresh-token
+
+Using Cloud Manager provider we can have Cloud Manager Connector deploy in matter of minutes. The following elements are going to be deployed in with this script:
+
+• IAM Policy and Custom IAM role that will be assigned to the Cloud Manager VM.
+• Create a Security Group to allow ports SSH (22), HTTPS (443) and HTTP (80).
+• SSH Key Pair to access Cloud Manager.
+• Cloud Manager VMs
+
+
+
