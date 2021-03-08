@@ -26,7 +26,7 @@ Using Cloud Manager provider we can have Cloud Manager Connector deploy in matte
 • IAM Policy and Custom IAM role that will be assigned to the Cloud Manager VM.  
 • Create a Security Group to allow ports SSH (22), HTTPS (443) and HTTP (80).  
 • SSH Key Pair to access Cloud Manager.  
-• Cloud Manager VMs.  
+• Cloud Manager VM.  
 
 
 
