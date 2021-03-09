@@ -1,8 +1,12 @@
 # Using Terraform to deploy Cloud Manager Connector in AWS. 
 
-### Azure_CVO.ps1 Running <br />
+### Cloud Volumes ONTAP in AWS with Terraform <br />
 <p align="center">
-  <img src="https://github.com/jorgeedugona/AzureCVO/blob/master/Images/Image06_1.png" alt="Azure_CVO.ps1 Running"/>
+  <img src="https://github.com/jorgeedugona/CVOTerraForm/blob/main/images/CVOAWS-icon.PNG" alt="CVO in AWS"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/jorgeedugona/CVOTerraForm/blob/main/images/terraform-icon.png" alt="Terraform"/>
 </p>
 
 Please find below the prerequisites to run the script: 
