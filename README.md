@@ -23,7 +23,8 @@ Using Cloud Manager provider we can have Cloud Manager Connector deploy in matte
 | :---: | :---: | :---: |
 |  22   | SSH   | Provides SSH access to the Connector host |
 |  80   | HTTP  | Provides HTTP access from client web browsers to the local user interface |
-|  443  | HTTPs | Provides HTTPS access from client web browsers to the local user interface |
+|  443  | HTTPs | Provides HTTPS access from client web browsers to the local user interface |  
+
 • SSH Key Pair to access Cloud Manager.  
 • Cloud Manager VM.  
 
