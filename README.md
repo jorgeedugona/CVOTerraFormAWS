@@ -1,4 +1,4 @@
-# Using Terraform to deploy Cloud Manager Connector in AWS. 
+# Using Terraform to deploy Cloud Manager Connector and Cloud Volumes ONTAP in AWS. 
 
 ### Cloud Volumes ONTAP in AWS with Terraform <br />
 
