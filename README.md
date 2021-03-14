@@ -11,7 +11,7 @@ Terraform             |  Cloud Volumes ONTAP
 • AWS Access key ID and Secret access key.   
 • Linux VM (Centos, Ubuntu) with Terraform and AWS cli installed.  
 • VPC ID, Subnet ID, AWS region.  
-• Outbound internet connectivity - https://docs.netapp.com/us-en/occm/reference_networking.html   
+• Outbound internet connectivity - https://docs.netapp.com/us-en/occm/reference_networking_cloud_manager.html#endpoints-to-manage-resources-in-aws   
 • Account with Cloud Central - https://cloud.netapp.com/  
 • Authentication Token with Cloud Central - https://services.cloud.netapp.com/refresh-token  
 
