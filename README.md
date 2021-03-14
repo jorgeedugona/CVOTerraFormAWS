@@ -15,10 +15,10 @@ Terraform             |  Cloud Volumes ONTAP
 • Account with Cloud Central - https://cloud.netapp.com/  
 • Authentication Token with Cloud Central - https://services.cloud.netapp.com/refresh-token  
 
-Before Cloud Volumes ONTAP is deployed, Cloud Manager connector needs to be deploy. The netapp-cloudmanager terraform provider will let you deploy the cloud connector and CVO rather quick. Here are the elements are going to be deployed in with this tf script:  
+Before Cloud Volumes ONTAP is deployed, Cloud Manager connector needs to be deploy. The netapp-cloudmanager terraform provider will let you deploy the cloud connector and CVO very quick. Here are the elements are going to be deployed in with this .tf script:  
 
 • IAM Policy and Custom IAM role that will be assigned to the Cloud Manager VM.  
-• Create a Security Group to allow ports SSH (22), HTTPS (443) and HTTP (80).  
+• Security Group to allow ports SSH (22), HTTPS (443) and HTTP (80).  
 | Port  | Protocol | Purpose |
 | :---: | :---: | :---: |
 |  22   | SSH   | Provides SSH access to the Connector host |
@@ -28,8 +28,11 @@ Before Cloud Volumes ONTAP is deployed, Cloud Manager connector needs to be depl
 • SSH Key Pair to access Cloud Manager.  
 • Cloud Manager VM.  
 
-### Terraform Configuration Files
+### Terraform Configuration Files   
 
+• terraform.tfvars - this is the file that contains all the variables (e.g. region, vpc ID, subnet ID etc).  
+• terraform.tf - this is the file that stores the format of the variables (e.g. string, bool etc).  
+• main.tf  
 
 
 
