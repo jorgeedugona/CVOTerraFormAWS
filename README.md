@@ -6,7 +6,7 @@ Terraform             |  Cloud Volumes ONTAP
 :-------------------------:|:-------------------------:
 ![](https://github.com/jorgeedugona/CVOTerraForm/blob/main/images/terraform-icon.png)  |  ![](https://github.com/jorgeedugona/CVOTerraForm/blob/main/images/CVOAWS-icon.PNG)
 
-### Please find below the prerequisites to run the script: <br />
+### Prerequisites to run the script: <br />
 
 • AWS Access key ID and Secret access key.  <br /> 
 • Linux VM (Centos, Ubuntu) with Terraform and AWS cli installed.  <br />
