@@ -30,8 +30,8 @@ Before Cloud Volumes ONTAP is deployed, Cloud Manager connector needs to be depl
 
 ### Terraform Configuration Files   
 
-• terraform.tfvars - this is the file that contains all the variables (e.g. region, vpc ID, subnet ID etc).  
-• terraform.tf - this is the file that stores the format of the variables (e.g. string, bool etc).  
+• terraform.tfvars - this file contains all the variables (e.g. region, vpc ID, subnet ID etc).  
+• terraform.tf - this file stores the format type of the variables (e.g. string, bool etc).  
 • main.tf  
 
 
