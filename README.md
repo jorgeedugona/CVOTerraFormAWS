@@ -16,18 +16,20 @@ Terraform             |  Cloud Volumes ONTAP
 • Account with Cloud Central - https://cloud.netapp.com/  <br />
 • Authentication Token with Cloud Central - https://services.cloud.netapp.com/refresh-token  <br />
 
-The netapp-cloudmanager terraform provider will let you deploy the cloud connector and CVO. Here are the elements that are going to be deployed with this main.tf script:  <br />
+The netapp-cloudmanager terraform provider will let you deploy the cloud connector and CVO. <br />
+### Here are the elements that are going to be deployed with this main.tf script:  <br />
 
-• IAM Policy and Custom IAM role that will be assigned to the Cloud Manager VM.  <br />
-• Security Group to allow ports SSH (22), HTTPS (443) and HTTP (80).  <br />
+1. IAM Policy and Custom IAM role that will be assigned to the Cloud Manager VM.  <br />
+2. Security Group to allow ports SSH (22), HTTPS (443) and HTTP (80).  <br />
+
 | Port  | Protocol | Purpose |
 | :---: | :---: | :---: |
 |  22   | SSH   | Provides SSH access to the Connector host |
 |  80   | HTTP  | Provides HTTP access from client web browsers to the local user interface |
 |  443  | HTTPs | Provides HTTPS access from client web browsers to the local user interface |  
 
-• SSH Key Pair to access Cloud Manager.  <br />
-• Cloud Manager VM.  <br />
+3. SSH Key Pair to access Cloud Manager.  <br />
+4. Cloud Manager VM.  <br />
 
 ### Terraform Configuration Files   
 
