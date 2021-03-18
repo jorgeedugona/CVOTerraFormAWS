@@ -19,7 +19,7 @@ Terraform             |  Cloud Volumes ONTAP
 The netapp-cloudmanager terraform provider will let you deploy the cloud connector and CVO. <br />
 ### Here are the elements that are going to be deployed with this main.tf script:  <br />
 
-1. IAM Policy and Custom IAM role that will be assigned to the Cloud Manager VM.  <br />
+1. IAM Policy and Custom IAM role. <br />
 2. Security Group to allow ports SSH (22), HTTPS (443) and HTTP (80).  <br />
 
 | Port  | Protocol | Purpose |
@@ -28,7 +28,7 @@ The netapp-cloudmanager terraform provider will let you deploy the cloud connect
 |  80   | HTTP  | Provides HTTP access from client web browsers to the local user interface |
 |  443  | HTTPs | Provides HTTPS access from client web browsers to the local user interface |  
 
-3. SSH Key Pair to access Cloud Manager.  <br />
+3. SSH Key Pair (to access Cloud Manager).  <br />
 4. Cloud Manager VM.  <br />
 
 ### Terraform Configuration Files   
