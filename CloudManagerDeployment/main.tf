@@ -115,13 +115,13 @@ resource "aws_key_pair" "generated_key" {
 # Save the private key locally
 resource "local_file" "private_key_pem" {
     content  = tls_private_key.SSHKey.private_key_pem
-    filename = "private_key.pem"
+    filename = "Connector_private_key.pem"
 }
 
 # Save the public key locally
 resource "local_file" "public_key_pem" {
     content  = tls_private_key.SSHKey.public_key_pem
-    filename = "public_key.pem"
+    filename = "Connector_public_key.pem"
 }
 
 # Outputs the content of the private key
