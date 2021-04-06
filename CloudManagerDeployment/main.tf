@@ -108,7 +108,7 @@ resource "tls_private_key" "SSHKey" {
 
 # Generate Key Pair
 resource "aws_key_pair" "generated_key" {
-  key_name   = "CloudManagerKeyPair-4"
+  key_name   = "CloudManagerKeyPair"
   public_key = tls_private_key.SSHKey.public_key_openssh
 }
 
