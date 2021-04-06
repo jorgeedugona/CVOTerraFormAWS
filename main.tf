@@ -101,15 +101,39 @@ resource "aws_security_group" "CloudManager-SG" {
 }
 
 # Creating Key Pair
-resource "tls_private_key" "PrivateKey" {
+resource "tls_private_key" "SSHKey" {
   algorithm = "RSA"
   rsa_bits  = 4096
 }
 
 # Generate Key Pair
 resource "aws_key_pair" "generated_key" {
-  key_name   = "CloudManagerKeyPair"
-  public_key = tls_private_key.PrivateKey.public_key_openssh
+  key_name   = "CloudManagerKeyPair-4"
+  public_key = tls_private_key.SSHKey.public_key_openssh
+}
+
+# Save the private key locally
+resource "local_file" "private_key_pem" {
+    content  = tls_private_key.SSHKey.private_key_pem
+    filename = "private_key.pem"
+}
+
+# Save the public key locally
+resource "local_file" "public_key_pem" {
+    content  = tls_private_key.SSHKey.public_key_pem
+    filename = "public_key.pem"
+}
+
+# Outputs the content of the private key
+output "PrivateKey_pem" {
+description = "The Private key"
+value = tls_private_key.SSHKey.private_key_pem
+}
+
+# Outputs the content of the public key
+output "PublicKey_pem" {
+description = "The Public key"
+value = tls_private_key.SSHKey.public_key_pem
 }
 
 resource "netapp-cloudmanager_connector_aws" "cl-occm-aws" {
