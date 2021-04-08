@@ -8,13 +8,21 @@ Terraform             |  Cloud Volumes ONTAP
 
 ### Prerequisites to run the script: <br />
 
-• AWS Access key ID and Secret access key.  <br /> 
-• Linux VM (Centos, Ubuntu) with Terraform and AWS cli installed.  <br />
-• VPC ID, Subnet ID, AWS region.  <br />
-• Outbound internet connectivity. <br />
-  https://docs.netapp.com/us-en/occm/reference_networking_cloud_manager.html#endpoints-to-manage-resources-in-aws   <br />
-• Account with Cloud Central - https://cloud.netapp.com/  <br />
-• Authentication Token with Cloud Central - https://services.cloud.netapp.com/refresh-token  <br />
+## Prerequisites to Install Cloud Manager Connector:
+* [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html) <br />
+* [Create Access Key and Secret Key](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-key/) <br />
+* [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) <br />
+* [Create an account in Cloud Central](https://cloud.netapp.com/) <br />
+* [Allow outbound internet access to the connector](https://docs.netapp.com/us-en/occm/reference_networking_aws.html#outbound-internet-access) <br />
+* [Authentication Token with Cloud Central](https://services.cloud.netapp.com/refresh-token) <br />
+
+## Prerequisites to install to Cloud Volumes ONTAP:
+* [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html) <br />
+* [Create Access Key and Secret Key](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-key/) <br />
+* [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) <br />
+* [Deploy Cloud Connector](https://github.com/jorgeedugona/CVOTerraForm/wiki/1.-Deploying-Cloud-Connector-using-Terraform) <br />
+* [Create 3 VPCs/Subnets for CVO HA or 1 VPC/Subnet for CVO Single Node](https://docs.netapp.com/us-en/occm/reference_networking_aws.html#example-ha-configuration) <br />
+* [ONLY for CVO HA - Create a Transit Gateway across 3 AZs](https://docs.netapp.com/us-en/occm/task_setting_up_transit_gateway.html) <br />
 
 The netapp-cloudmanager terraform provider will let you deploy the cloud connector and CVO. <br />
 ### Here are the elements that are going to be deployed with this main.tf script:  <br />
