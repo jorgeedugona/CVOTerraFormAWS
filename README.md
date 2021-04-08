@@ -8,7 +8,7 @@ Terraform             |  Cloud Volumes ONTAP
 
 ### Prerequisites to run the script: <br />
 
-## Prerequisites to Install Cloud Manager Connector:
+## Prerequisites to deploy the Cloud Manager Connector:
 * [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html) <br />
 * [Create Access Key and Secret Key](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-key/) <br />
 * [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) <br />
@@ -30,7 +30,7 @@ Terraform             |  Cloud Volumes ONTAP
 3. SSH Key Pair (to access Cloud Manager).  <br />
 4. Cloud Manager VM.  <br />
 
-## Prerequisites to install to Cloud Volumes ONTAP:
+## Prerequisites to deploy Cloud Volumes ONTAP:
 * [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html) <br />
 * [Create Access Key and Secret Key](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-key/) <br />
 * [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) <br />
