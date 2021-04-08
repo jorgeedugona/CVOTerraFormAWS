@@ -20,11 +20,13 @@ Terraform             |  Cloud Volumes ONTAP
 
 1. IAM Policy and Custom IAM role. <br />
 2. Security Group to allow ports SSH (22), HTTPS (443) and HTTP (80).  <br />
+
 | Port  | Protocol | Purpose |
 | :---: | :---: | :---: |
 |  22   | SSH   | Provides SSH access to the Connector host |
 |  80   | HTTP  | Provides HTTP access from client web browsers to the local user interface |
-|  443  | HTTPs | Provides HTTPS access from client web browsers to the local user interface |  
+|  443  | HTTPs | Provides HTTPS access from client web browsers to the local user interface |
+
 3. SSH Key Pair (to access Cloud Manager).  <br />
 4. Cloud Manager VM.  <br />
 
